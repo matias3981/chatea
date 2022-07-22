@@ -13,7 +13,6 @@ export function EmojisBackground() {
 		<Wrapper>
 			<SmilingFaceWithHeartWrapper>
 				<Image
-					priority
 					placeholder='blur'
 					width={'145px'}
 					height={'145px'}
@@ -25,7 +24,6 @@ export function EmojisBackground() {
 				<Image
 					width={'140px'}
 					height={'140px'}
-					priority
 					placeholder='blur'
 					src={GrinningSquintingFace}
 					alt=''
@@ -35,7 +33,6 @@ export function EmojisBackground() {
 				<Image
 					width={'120px'}
 					height={'120px'}
-					priority
 					placeholder='blur'
 					src={AstonishedFace}
 					alt=''
@@ -45,7 +42,6 @@ export function EmojisBackground() {
 				<Image
 					width={'90px'}
 					height={'90px'}
-					priority
 					placeholder='blur'
 					src={SmilingFaceWithSunglasses}
 					alt=''
@@ -55,7 +51,6 @@ export function EmojisBackground() {
 				<Image
 					width={'120px'}
 					height={'120px'}
-					priority
 					placeholder='blur'
 					src={SmirkingFace}
 					alt=''
