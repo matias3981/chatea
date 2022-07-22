@@ -12,19 +12,54 @@ export function EmojisBackground() {
 	return (
 		<Wrapper>
 			<SmilingFaceWithHeartWrapper>
-				<Image src={SmilingFaceWithHeart} alt='' />
+				<Image
+					priority
+					placeholder='blur'
+					width={'145px'}
+					height={'145px'}
+					src={SmilingFaceWithHeart}
+					alt=''
+				/>
 			</SmilingFaceWithHeartWrapper>
 			<GrinningSquintingFaceWrapper>
-				<Image src={GrinningSquintingFace} alt='' />
+				<Image
+					width={'140px'}
+					height={'140px'}
+					priority
+					placeholder='blur'
+					src={GrinningSquintingFace}
+					alt=''
+				/>
 			</GrinningSquintingFaceWrapper>
 			<AstonishedFaceWrapper>
-				<Image src={AstonishedFace} alt='' />
+				<Image
+					width={'120px'}
+					height={'120px'}
+					priority
+					placeholder='blur'
+					src={AstonishedFace}
+					alt=''
+				/>
 			</AstonishedFaceWrapper>
 			<SmilingFaceWithSunglassesWrapper>
-				<Image src={SmilingFaceWithSunglasses} alt='' />
+				<Image
+					width={'90px'}
+					height={'90px'}
+					priority
+					placeholder='blur'
+					src={SmilingFaceWithSunglasses}
+					alt=''
+				/>
 			</SmilingFaceWithSunglassesWrapper>
 			<SmirkingFaceWrapper>
-				<Image src={SmirkingFace} alt='' />
+				<Image
+					width={'120px'}
+					height={'120px'}
+					priority
+					placeholder='blur'
+					src={SmirkingFace}
+					alt=''
+				/>
 			</SmirkingFaceWrapper>
 		</Wrapper>
 	);
@@ -70,7 +105,7 @@ const GrinningSquintingFaceWrapper = styled.div`
 	top: 20%;
 	transform: rotate(-30deg);
 
-	@media ${QUERIES.tabletAndUp}{
+	@media ${QUERIES.tabletAndUp} {
 		width: 110px;
 		top: 20%;
 		right: 7%;
@@ -115,7 +150,7 @@ const SmilingFaceWithSunglassesWrapper = styled.div`
 		top: 80%;
 		left: 5%;
 	}
-	
+
 	@media ${QUERIES.laptopAndUp} {
 		width: 90px;
 		top: 80%;
