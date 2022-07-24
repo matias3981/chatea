@@ -6,7 +6,7 @@ import {
 } from '@reach/listbox';
 import styled from 'styled-components';
 import '@reach/listbox/styles.css';
-import arrowDown from '../../../../public/images/down-arrow.svg';
+import arrowDown from '../../../../public/images/down-arrow.png';
 import Image from 'next/image';
 import 'flagpack/dist/flagpack.css';
 import { Input } from '../Input';
@@ -39,7 +39,16 @@ export function FlagSelector({
 			{({ value }) => (
 				<>
 					<Button
-						arrow={<Image src={arrowDown} alt='' width={16} height={16} />}
+						aria-label='Listado paises'
+						arrow={
+							<Image
+								src={arrowDown}
+								alt=''
+								layout='fixed'
+								width={10}
+								height={6}
+							/>
+						}
 					>
 						<span className={`fp fp-rounded ${value?.toLowerCase()}`}></span>
 					</Button>
@@ -50,7 +59,7 @@ export function FlagSelector({
 					/>
 					<ListboxPopoverWrapper portal={false} style={{ width: 'initial' }}>
 						<ListboxListWrapper>
-							<CountriesList countries={countries} selectedCountry={value} />
+							<CountriesList countries={countries} selectedCountry={value?.toUpperCase()!} />
 						</ListboxListWrapper>
 					</ListboxPopoverWrapper>
 				</>

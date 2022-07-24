@@ -32,7 +32,7 @@ export function Input({ name, countryPhoneCode, countryCode }: InputProps) {
 		}
 	}
 	return (
-		<InputField type={'tel'} name={name} value={inputValue} onChange={handleOnChange} />
+		<InputField aria-label='phone number' type={'tel'} name={name} value={inputValue} onChange={handleOnChange} />
 	);
 }
 

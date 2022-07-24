@@ -1,7 +1,7 @@
 import { ListboxOption } from '@reach/listbox';
 import Image from 'next/image';
 import styled from 'styled-components';
-import checkIcon from '../../../../public/images/check.svg';
+import checkIcon from '../../../../public/images/check.png';
 import { Country } from '../../../../interfaces';
 
 interface CountriesListProps {
@@ -31,6 +31,8 @@ export function CountriesList({
 							<Image
 								style={{ verticalAlign: 'middle' }}
 								alt=''
+								width={24}
+								height={24}
 								src={checkIcon}
 							/>
 						</CheckWrapper>
@@ -57,4 +59,5 @@ const CheckWrapper = styled.div`
 	margin-left: auto;
 	display: flex;
 	align-items: center;
+	width: 24px;
 `;

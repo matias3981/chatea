@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { QUERIES } from '../../constants/breakpoints';
 import { Country } from '../../interfaces';
-import logo from '../../public/images/logo.webp';
+import logo from '../../public/images/whatsapp-logo.webp';
 import Image from 'next/image';
 import { WhatsappNumberForm } from './components/WhatsappNumberForm';
 
@@ -13,7 +13,7 @@ export function ChatCard({ countries }: ChatCardProps) {
 	return (
 		<Wrapper>
 			<ImageWrapper>
-				<Image src={logo} alt='' />
+				<Image layout='responsive' src={logo} alt='' />
 			</ImageWrapper>
 			<Title>Chateá sin agregar</Title>
 			<Subtitle>
