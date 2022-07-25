@@ -12,7 +12,7 @@ export function Layout({ children }: LayoutProps) {
 		<ThemeProvider theme={theme}>
 			<GlobalStyles />
 			<Wrapper>
-				{/* <EmojisBackground /> */}
+				<EmojisBackground />
 				{children}
 			</Wrapper>
 		</ThemeProvider>

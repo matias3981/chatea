@@ -13,17 +13,19 @@ export function EmojisBackground() {
 		<Wrapper>
 			<SmilingFaceWithHeartWrapper>
 				<Image
+					layout='responsive'
 					placeholder='blur'
-					width={'145px'}
-					height={'145px'}
+					width={145}
+					height={145}
 					src={SmilingFaceWithHeart}
 					alt=''
 				/>
 			</SmilingFaceWithHeartWrapper>
 			<GrinningSquintingFaceWrapper>
 				<Image
-					width={'140px'}
-					height={'140px'}
+					layout='responsive'
+					width={140}
+					height={140}
 					placeholder='blur'
 					src={GrinningSquintingFace}
 					alt=''
@@ -31,8 +33,9 @@ export function EmojisBackground() {
 			</GrinningSquintingFaceWrapper>
 			<AstonishedFaceWrapper>
 				<Image
-					width={'120px'}
-					height={'120px'}
+					layout='responsive'
+					width={120}
+					height={120}
 					placeholder='blur'
 					src={AstonishedFace}
 					alt=''
@@ -40,8 +43,9 @@ export function EmojisBackground() {
 			</AstonishedFaceWrapper>
 			<SmilingFaceWithSunglassesWrapper>
 				<Image
-					width={'90px'}
-					height={'90px'}
+					layout='responsive'
+					width={90}
+					height={90}
 					placeholder='blur'
 					src={SmilingFaceWithSunglasses}
 					alt=''
@@ -49,8 +53,9 @@ export function EmojisBackground() {
 			</SmilingFaceWithSunglassesWrapper>
 			<SmirkingFaceWrapper>
 				<Image
-					width={'120px'}
-					height={'120px'}
+					layout='responsive'
+					width={120}
+					height={120}
 					placeholder='blur'
 					src={SmirkingFace}
 					alt=''
