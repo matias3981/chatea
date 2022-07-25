@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
 
 	render(): JSX.Element {
 		return (
-			<Html lang='es'>
+			<Html lang='es' >
 				<Head>
 					<link
 						rel='apple-touch-icon'
